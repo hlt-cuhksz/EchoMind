@@ -1,6 +1,6 @@
-<!-- <p align="center">
-  <img src="figure/Logo.png" alt="BAGEL" width="200"/>
-</p> -->
+<p align="center">
+  <img src="figure/Logo.png" alt="BAGEL" width="400"/>
+</p>
 
 
 # EchoMind: An Interrelated Multi‑Level Benchmark for Evaluating Empathetic Speech Language Models
