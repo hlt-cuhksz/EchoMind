@@ -1,7 +1,0 @@
-__pycache__/
-.DS_Store
-core.*
-.cache/
-*.pyc
-*.egg-info
-*.whl
