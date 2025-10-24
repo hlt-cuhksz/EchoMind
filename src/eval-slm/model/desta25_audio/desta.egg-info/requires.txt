@@ -1,0 +1,5 @@
+whisper_normalizer
+huggingface_hub
+lulutils@ git+https://github.com/kehanlu/lulutils.git
+transformers==4.49.0
+peft

@@ -1,0 +1,8 @@
+README.md
+setup.py
+desta/__init__.py
+desta.egg-info/PKG-INFO
+desta.egg-info/SOURCES.txt
+desta.egg-info/dependency_links.txt
+desta.egg-info/requires.txt
+desta.egg-info/top_level.txt

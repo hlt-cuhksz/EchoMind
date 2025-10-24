@@ -1,0 +1,12 @@
+from transformers import AutoConfig, AutoTokenizer, AutoModel, AutoModelForCausalLM
+
+from .modeling_qwen2 import Qwen2MTPSenseVoiceForCausalLM
+from .configuration_qwen2 import Qwen2MTPSenseVoiceConfig
+
+AutoConfig.register("qwen2_mtp_sensevoice", Qwen2MTPSenseVoiceConfig)
+AutoModelForCausalLM.register(Qwen2MTPSenseVoiceConfig, Qwen2MTPSenseVoiceForCausalLM)
+# AutoTokenizer.register(Qwen2MTPSenseVoiceConfig, Qwen2MTPSenseVoiceTokenizer)
+
+Qwen2MTPSenseVoiceConfig.register_for_auto_class()
+# Qwen2MTPSenseVoiceModel.register_for_auto_class("AutoModel")
+Qwen2MTPSenseVoiceForCausalLM.register_for_auto_class("AutoModelForCausalLM")

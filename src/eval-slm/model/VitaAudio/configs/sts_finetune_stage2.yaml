@@ -1,0 +1,273 @@
+
+xlsx_sample_num: 5
+
+dataset:
+
+  wenet-e2e/wenetspeech:
+    ratio: 0.05
+    data_paths:
+      - datasets/jsonl/wenet-e2e/wenetspeech/L_fixed.jsonl
+      - datasets/jsonl/wenet-e2e/wenetspeech/DEV_fixed.jsonl
+
+  Wenetspeech4TTS/Wenetspeech4TTS:
+    ratio: 0.05
+    data_paths:
+      - datasets/jsonl/Wenetspeech4TTS/WenetSpeech4TTS/Basic.jsonl
+
+  fixie-ai/librispeech_asr:
+    ratio: 0.05
+    data_paths:
+      - datasets/jsonl/fixie-ai/librispeech_asr/train.100.clean.jsonl
+      - datasets/jsonl/fixie-ai/librispeech_asr/train.360.clean.jsonl
+      - datasets/jsonl/fixie-ai/librispeech_asr/train.500.other.jsonl
+
+  mythicinfinity/libritts:
+    ratio: 0.05
+    data_paths:
+      - datasets/jsonl/mythicinfinity/libritts/train.clean.100.jsonl
+      - datasets/jsonl/mythicinfinity/libritts/train.clean.360.jsonl
+      - datasets/jsonl/mythicinfinity/libritts/train.other.500.jsonl
+      - datasets/jsonl/mythicinfinity/libritts_r/train.clean.100.jsonl
+      - datasets/jsonl/mythicinfinity/libritts_r/train.clean.360.jsonl
+      - datasets/jsonl/mythicinfinity/libritts_r/train.other.500.jsonl
+
+  parler-tts/mls_eng:
+    ratio: 0.05
+    data_paths:
+      #- datasets/jsonl/parler-tts/mls_eng_10k/train.jsonl
+      - datasets/jsonl/parler-tts/mls_eng/train.jsonl
+
+  mozilla-foundation/common_voice_17_0:
+    ratio: 0.05
+    data_paths:
+      - datasets/jsonl/mozilla-foundation/common_voice_17_0/en/train.jsonl
+      - datasets/jsonl/mozilla-foundation/common_voice_17_0/zh-CN/train.jsonl
+
+  MushanW/GLOBE_V2:
+    ratio: 0.05
+    data_paths:
+      - datasets/jsonl/MushanW/GLOBE_V2/train.jsonl
+
+  amphion/Emilia-Dataset:
+    ratio: 0.025
+    data_paths:
+      - datasets/jsonl/amphion/Emilia-Dataset/ZH_B000000_B000100.jsonl
+      - datasets/jsonl/amphion/Emilia-Dataset/ZH_B000100_B000200.jsonl
+      - datasets/jsonl/amphion/Emilia-Dataset/ZH_B000200_B000300.jsonl
+      - datasets/jsonl/amphion/Emilia-Dataset/ZH_B000300_B000400.jsonl
+      - datasets/jsonl/amphion/Emilia-Dataset/ZH_B000400_B000500.jsonl
+      - datasets/jsonl/amphion/Emilia-Dataset/ZH_B000500_B000600.jsonl
+      - datasets/jsonl/amphion/Emilia-Dataset/ZH_B000600_B000700.jsonl
+      - datasets/jsonl/amphion/Emilia-Dataset/ZH_B000700_B000800.jsonl
+      - datasets/jsonl/amphion/Emilia-Dataset/ZH_B000800_B000900.jsonl
+      - datasets/jsonl/amphion/Emilia-Dataset/ZH_B000900_B001000.jsonl
+      - datasets/jsonl/amphion/Emilia-Dataset/EN_B000000_B000100.jsonl
+      - datasets/jsonl/amphion/Emilia-Dataset/EN_B000100_B000200.jsonl
+      - datasets/jsonl/amphion/Emilia-Dataset/EN_B000200_B000300.jsonl
+      - datasets/jsonl/amphion/Emilia-Dataset/EN_B000300_B000400.jsonl
+      - datasets/jsonl/amphion/Emilia-Dataset/EN_B000400_B000500.jsonl
+      - datasets/jsonl/amphion/Emilia-Dataset/EN_B000500_B000600.jsonl
+      - datasets/jsonl/amphion/Emilia-Dataset/EN_B000600_B000700.jsonl
+      - datasets/jsonl/amphion/Emilia-Dataset/EN_B000700_B000800.jsonl
+      - datasets/jsonl/amphion/Emilia-Dataset/EN_B000800_B000900.jsonl
+      - datasets/jsonl/amphion/Emilia-Dataset/EN_B000900_B001000.jsonl
+      - datasets/jsonl/amphion/Emilia-Dataset/EN_B001000_B001100.jsonl
+      - datasets/jsonl/amphion/Emilia-Dataset/EN_B001100_B001200.jsonl
+
+  amphion/Emilia-Dataset/speaker_prompt:
+    ratio: 0.025
+    data_paths:
+      - datasets/jsonl/amphion/Emilia-Dataset/ZH_B000000_B000100_speak_prompt.jsonl
+      - datasets/jsonl/amphion/Emilia-Dataset/ZH_B000100_B000200_speak_prompt.jsonl
+      - datasets/jsonl/amphion/Emilia-Dataset/ZH_B000200_B000300_speak_prompt.jsonl
+      - datasets/jsonl/amphion/Emilia-Dataset/ZH_B000300_B000400_speak_prompt.jsonl
+      - datasets/jsonl/amphion/Emilia-Dataset/ZH_B000400_B000500_speak_prompt.jsonl
+      - datasets/jsonl/amphion/Emilia-Dataset/ZH_B000500_B000600_speak_prompt.jsonl
+      - datasets/jsonl/amphion/Emilia-Dataset/ZH_B000600_B000700_speak_prompt.jsonl
+      - datasets/jsonl/amphion/Emilia-Dataset/ZH_B000700_B000800_speak_prompt.jsonl
+      - datasets/jsonl/amphion/Emilia-Dataset/ZH_B000800_B000900_speak_prompt.jsonl
+      - datasets/jsonl/amphion/Emilia-Dataset/ZH_B000900_B001000_speak_prompt.jsonl
+      - datasets/jsonl/amphion/Emilia-Dataset/EN_B000000_B000100_speak_prompt.jsonl
+      - datasets/jsonl/amphion/Emilia-Dataset/EN_B000100_B000200_speak_prompt.jsonl
+      - datasets/jsonl/amphion/Emilia-Dataset/EN_B000200_B000300_speak_prompt.jsonl
+      - datasets/jsonl/amphion/Emilia-Dataset/EN_B000300_B000400_speak_prompt.jsonl
+      - datasets/jsonl/amphion/Emilia-Dataset/EN_B000400_B000500_speak_prompt.jsonl
+      - datasets/jsonl/amphion/Emilia-Dataset/EN_B000500_B000600_speak_prompt.jsonl
+      - datasets/jsonl/amphion/Emilia-Dataset/EN_B000600_B000700_speak_prompt.jsonl
+      - datasets/jsonl/amphion/Emilia-Dataset/EN_B000700_B000800_speak_prompt.jsonl
+      - datasets/jsonl/amphion/Emilia-Dataset/EN_B000800_B000900_speak_prompt.jsonl
+      - datasets/jsonl/amphion/Emilia-Dataset/EN_B000900_B001000_speak_prompt.jsonl
+      - datasets/jsonl/amphion/Emilia-Dataset/EN_B001000_B001100_speak_prompt.jsonl
+      - datasets/jsonl/amphion/Emilia-Dataset/EN_B001100_B001200_speak_prompt.jsonl
+
+  openslr:
+    ratio: 0.05
+    data_paths:
+      - datasets/jsonl/openslr/SLR68/train.jsonl
+      - datasets/jsonl/openslr/SLR68/dev.jsonl
+
+  speechcolab/gigaspeech:
+    ratio: 0.05
+    data_paths:
+      - datasets/jsonl/speechcolab/gigaspeech/xl.jsonl
+      - datasets/jsonl/speechcolab/gigaspeech/dev.jsonl
+
+  MLCommons/peoples_speech:
+    ratio: 0.05
+    data_paths:
+      - datasets/jsonl/MLCommons/peoples_speech/clean.jsonl
+      - datasets/jsonl/MLCommons/peoples_speech/clean_sa.jsonl
+      - datasets/jsonl/MLCommons/peoples_speech/dirty.jsonl
+      - datasets/jsonl/MLCommons/peoples_speech/dirty_sa.jsonl
+      - datasets/jsonl/MLCommons/peoples_speech/validation.jsonl
+
+  facebook/voxpopuli:
+    ratio: 0.05
+    data_paths:
+      - datasets/jsonl/facebook/voxpopuli/en_train.jsonl
+      - datasets/jsonl/facebook/voxpopuli/en_accented_test.jsonl
+
+  shenyunhang:
+    ratio: 0.05
+    data_paths:
+      - datasets/jsonl/shenyunhang/AISHELL-1/train.jsonl 
+      - datasets/jsonl/shenyunhang/AISHELL-1/dev.jsonl 
+      - datasets/jsonl/shenyunhang/AISHELL-2/data.jsonl 
+      - datasets/jsonl/shenyunhang/AISHELL-3/data.jsonl 
+      - datasets/jsonl/shenyunhang/AISHELL-4/data.jsonl 
+
+  gpt-omni/VoiceAssistant-400K:
+    ratio: 2.0
+    data_paths:
+      - datasets/jsonl/gpt-omni/VoiceAssistant-400K/data.jsonl
+
+  VITA-MLLM/AudioQA-1M:
+    ratio: 2.0
+    data_paths:
+      - datasets/jsonl/VITA-MLLM/AudioQA-1M/data.jsonl
+
+  BAAI/Infinity-Instruct:
+    ratio: 0.05
+    data_paths:
+      #- datasets/jsonl/BAAI/Infinity-Instruct/3M.jsonl
+      #- datasets/jsonl/BAAI/Infinity-Instruct/7M.jsonl
+      #- datasets/jsonl/BAAI/Infinity-Instruct/7M_domains.jsonl
+      - datasets/jsonl/BAAI/Infinity-Instruct/0625.jsonl
+      #- datasets/jsonl/BAAI/Infinity-Instruct/Gen.jsonl
+
+  OpenHermes:
+    ratio: 0.05
+    data_paths:
+      - datasets/jsonl/teknium/OpenHermes-2.5/openhermes2_5.jsonl
+
+  lima:
+    ratio: 0.05
+    data_paths:
+      - datasets/jsonl/GAIR/lima/train.jsonl
+
+  databricks-dolly-15k:
+    ratio: 0.05
+    data_paths:
+      - datasets/jsonl/databricks/databricks-dolly-15k/databricks-dolly-15k.jsonl
+
+  MetaMathQA:
+    ratio: 0.05
+    data_paths:
+      - datasets/jsonl/meta-math/MetaMathQA/MetaMathQA-395K.jsonl
+
+  MathInstruct:
+    ratio: 0.05
+    data_paths:
+      - datasets/jsonl/TIGER-Lab/MathInstruct/MathInstruct.jsonl
+
+  orca-math-word-problems-200k:
+    ratio: 0.05
+    data_paths:
+      - datasets/jsonl/microsoft/orca-math-word-problems-200k/data.jsonl
+
+  atlas-math-sets:
+    ratio: 0.05
+    num: 100000
+    data_paths:
+      - datasets/jsonl/AtlasUnified/atlas-math-sets/train.jsonl
+
+  goat:
+    ratio: 0.05
+    num: 30000
+    data_paths:
+      - datasets/jsonl/tiedong/goat/dataset.jsonl
+
+  camel-ai:
+    ratio: 0.05
+    data_paths:
+      - datasets/jsonl/camel-ai/math/math.jsonl
+
+  Long-Instruction-with-Paraphrasing:
+    ratio: 0.05
+    data_paths:
+      - datasets/jsonl/yuyijiong/Long-Instruction-with-Paraphrasing/booksum_en.jsonl
+      - datasets/jsonl/yuyijiong/Long-Instruction-with-Paraphrasing/multi_doc_qa_en_paraphrasing.jsonl
+      - datasets/jsonl/yuyijiong/Long-Instruction-with-Paraphrasing/sharegpt_en.jsonl
+      - datasets/jsonl/yuyijiong/Long-Instruction-with-Paraphrasing/short_instruction_from_alpaca_en.jsonl
+      - datasets/jsonl/yuyijiong/Long-Instruction-with-Paraphrasing/single_doc_qa_en_paraphrasing.jsonl
+      - datasets/jsonl/yuyijiong/Long-Instruction-with-Paraphrasing/translation_en2zh.jsonl
+      - datasets/jsonl/yuyijiong/Long-Instruction-with-Paraphrasing/booksum_zh.jsonl
+      - datasets/jsonl/yuyijiong/Long-Instruction-with-Paraphrasing/multi_doc_qa_zh_paraphrasing.jsonl
+      - datasets/jsonl/yuyijiong/Long-Instruction-with-Paraphrasing/sharegpt_zh.jsonl
+      - datasets/jsonl/yuyijiong/Long-Instruction-with-Paraphrasing/short_instruction_from_llama_chinese.jsonl
+      - datasets/jsonl/yuyijiong/Long-Instruction-with-Paraphrasing/single_doc_qa_zh_paraphrasing.jsonl
+
+  Long:
+    ratio: 0.05
+    data_paths:
+      - datasets/jsonl/akoksal/LongForm/data.jsonl
+      - datasets/jsonl/THUDM/LongAlign-10k/long.jsonl
+      - datasets/jsonl/THUDM/LongCite-45k/long.jsonl
+      - datasets/jsonl/THUDM/LongWriter-6k/long.jsonl
+      - datasets/jsonl/YeungNLP/LongQLoRA-Dataset/LongQLoRA-SFT-Data-39k.jsonl
+      - datasets/jsonl/Yukang/LongAlpaca-12k/LongAlpaca-12k.jsonl
+      - datasets/jsonl/togethercomputer/Long-Data-Collections/natural_questions_10_200_docs.jsonl
+      - datasets/jsonl/togethercomputer/Long-Data-Collections/booksum.jsonl
+      - datasets/jsonl/KnutJaegersberg/longinstruct/longinstruct.jsonl
+
+  open-thoughts/OpenThoughts2-1M:
+    ratio: 0.0
+    num: 10000
+    data_paths:
+      - datasets/jsonl/open-thoughts/OpenThoughts2-1M/data.jsonl
+
+  nvidia/Llama-Nemotron-Post-Training-Dataset:
+    ratio: 0.0
+    num: 10000
+    data_paths:
+      - datasets/jsonl/nvidia/Llama-Nemotron-Post-Training-Dataset/SFT_chat.jsonl
+      - datasets/jsonl/nvidia/Llama-Nemotron-Post-Training-Dataset/SFT_code.jsonl
+      #- datasets/jsonl/nvidia/Llama-Nemotron-Post-Training-Dataset/SFT_math.jsonl
+      #- datasets/jsonl/nvidia/Llama-Nemotron-Post-Training-Dataset/SFT_safety.jsonl
+      - datasets/jsonl/nvidia/Llama-Nemotron-Post-Training-Dataset/SFT_science.jsonl
+
+  glaiveai/reasoning-v1-20m:
+    ratio: 0.0
+    num: 10000
+    data_paths:
+      - datasets/jsonl/glaiveai/reasoning-v1-20m/data.jsonl
+
+  nvidia/OpenCodeReasoning:
+    ratio: 0.0
+    num: 10000
+    data_paths:
+      - datasets/jsonl/nvidia/OpenCodeReasoning/split_0.jsonl
+
+  Congliu/Chinese-DeepSeek-R1-Distill-data-110k-SFT:
+    ratio: 0.0
+    num: 10000
+    data_paths:
+      - datasets/jsonl/Congliu/Chinese-DeepSeek-R1-Distill-data-110k-SFT/data.jsonl 
+
+  open-r1/OpenR1-Math-220k:
+    ratio: 0.0
+    num: 10000
+    data_paths:
+      #- datasets/jsonl/open-r1/OpenR1-Math-220k/default.jsonl
+      - datasets/jsonl/open-r1/OpenR1-Math-220k/all.jsonl
+      #- datasets/jsonl/open-r1/OpenR1-Math-220k/extended.jsonl

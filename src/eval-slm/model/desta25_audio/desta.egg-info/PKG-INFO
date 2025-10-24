@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: desta
+Version: 0.1.0
+Summary: DeSTA2.5-Audio
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: whisper_normalizer
+Requires-Dist: huggingface_hub
+Requires-Dist: lulutils@ git+https://github.com/kehanlu/lulutils.git
+Requires-Dist: transformers==4.49.0
+Requires-Dist: peft
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
