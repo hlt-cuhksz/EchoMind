@@ -40,15 +40,6 @@ def main(args):
         # 2-1. obtain input audio file
         input_audio_file = os.path.join(input_dir, "audio", d[f'{ty}_audio_info'][f"{ty}_input_audio_file"])
 
-        # if d['spoken_info'] in speech_info['environment']:
-        #     env_file = "all_env"
-        #     input_audio_file = f'{d["case_id"]}_{d["spoken_info"]}_{d["topic"]}_{ty}.wav'
-        #     input_audio_file = os.path.join(input_dir, "audio", env_file, input_audio_file)
-        # else:
-        #     spoken_info = speech_info['speaker-paralinguistic'][d['spoken_info']]
-        #     input_audio_file = f'{d["case_id"]}_{spoken_info}_{d["topic"]}_{ty}.wav'
-        #     input_audio_file = os.path.join(input_dir, "audio", spoken_info, input_audio_file)
-
         if not os.path.isfile(input_audio_file):
             print(input_audio_file)
             continue  # check if some input audio_file miss
