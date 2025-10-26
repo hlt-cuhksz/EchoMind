@@ -22,3 +22,7 @@ Specifically, it evaluates their ability to perceive and incorporate non-lexical
   <img src="figure/EchoMind.png"/>
 </p>
  <figcaption>The EchoMind framework & examples. (a) Multi‑level cognitive process simulation for empathetic dialogue: Level 1—Understanding through content (ASR) and voice (MCQs); Level 2—Reasoning by integrating content and voice (MCQs); Level 3—Conversation with contextually and emotionally aligned responses (Open-domain Response). (b) Responses under controlled vocal-style variations of the same script—target, neutral, and alternative expressions—illustrating differences in response focus.</figcaption>
+
+
+## Getting Started
+### Installation
