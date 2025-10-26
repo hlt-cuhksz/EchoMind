@@ -12,3 +12,13 @@
 </div>
 
 
+## Overview
+We introduce EchoMind, a benchmark designed to comprehensively assess the empathetic capabilities of Speech Language Models (SLMs) in dialogue scenarios.
+Specifically, it evaluates their ability to perceive and incorporate non-lexical acoustic cues—beyond the spoken content—to infer speaker states and generate responses that are contextually and emotionally appropriate in text and vocal expressiveness.
+
+
+
+<p align="center">
+  <img src="figure/EchoMind.png"/>
+</p>
+ <figcaption>The EchoMind framework & examples. (a) Multi‑level cognitive process simulation for empathetic dialogue: Level 1—Understanding through content (ASR) and voice (MCQs); Level 2—Reasoning by integrating content and voice (MCQs); Level 3—Conversation with contextually and emotionally aligned responses (Open-domain Response). (b) Responses under controlled vocal-style variations of the same script—target, neutral, and alternative expressions—illustrating differences in response focus.</figcaption>
