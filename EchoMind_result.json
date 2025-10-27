@@ -1,0 +1,564 @@
+{
+    "leaderboardData": [
+        {
+            "info": {
+                "name": "Audio-Flamingo3",
+                "size": "-",
+                "type": "open",
+                "link": ""
+            },
+            "Understanding": {
+                "WER": 2.93,
+                "SemSim": 99.18,
+                "Acc": 64.29
+            },
+            "Reasoning": {
+                "Acc": 58.8
+            },
+            "Reasoning(Audio)": {
+                "NISQA": "-",
+                "DNMOS": "-",
+                "EmoAlign": "-",
+                "VES": "-"
+            }
+        },
+        {
+            "info": {
+                "name": "Audio-Flamingo3+Think",
+                "size": "-",
+                "type": "open",
+                "link": ""
+            },
+            "Understanding": {
+                "WER": "-",
+                "SemSim": 97.58,
+                "Acc": 65.16
+            },
+            "Reasoning": {
+                "Acc": 42.95
+            },
+            "Reasoning(Audio)": {
+                "NISQA": "-",
+                "DNMOS": "-",
+                "EmoAlign": "-",
+                "VES": "-"
+            }
+        },
+        {
+            "info": {
+                "name": "Audio-Flamingo3-chat",
+                "size": "-",
+                "type": "open",
+                "link": ""
+            },
+            "Understanding": {
+                "WER": "-",
+                "SemSim": "-",
+                "Acc": 41.2
+            },
+            "Reasoning": {
+                "Acc": 51.59
+            },
+            "Reasoning(Audio)": {
+                "NISQA": "-",
+                "DNMOS": "-",
+                "EmoAlign": "-",
+                "VES": "-"
+            }
+        },
+        {
+            "info": {
+                "name": "DeSTA2.5-Audio",
+                "size": "-",
+                "type": "open",
+                "link": ""
+            },
+            "Understanding": {
+                "WER": 5.39,
+                "SemSim": 98.64,
+                "Acc": 56.68
+            },
+            "Reasoning": {
+                "Acc": 63.04
+            },
+            "Reasoning(Audio)": {
+                "NISQA": "-",
+                "DNMOS": "-",
+                "EmoAlign": "-",
+                "VES": "-"
+            }
+        },
+        {
+            "info": {
+                "name": "VITA-Audio",
+                "size": "-",
+                "type": "open",
+                "link": ""
+            },
+            "Understanding": {
+                "WER": 4.91,
+                "SemSim": 98.74,
+                "Acc": 25.24
+            },
+            "Reasoning": {
+                "Acc": 27.69
+            },
+            "Reasoning(Audio)": {
+                "NISQA": 4.99,
+                "DNMOS": 4.3,
+                "EmoAlign": 38.52,
+                "VES": 2.13
+            }
+        },
+        {
+            "info": {
+                "name": "LLaMA-Omni2",
+                "size": "-",
+                "type": "open",
+                "link": ""
+            },
+            "Understanding": {
+                "WER": 8.88,
+                "SemSim": 97.78,
+                "Acc": 36.24
+            },
+            "Reasoning": {
+                "Acc": 50.58
+            },
+            "Reasoning(Audio)": {
+                "NISQA": 4.84,
+                "DNMOS": 4.46,
+                "EmoAlign": 43.17,
+                "VES": 2.06
+            }
+        },
+        {
+            "info": {
+                "name": "Baichuan-Omni-1.5",
+                "size": "-",
+                "type": "open",
+                "link": ""
+            },
+            "Understanding": {
+                "WER": 8.86,
+                "SemSim": 97.33,
+                "Acc": 43.58
+            },
+            "Reasoning": {
+                "Acc": 55.5
+            },
+            "Reasoning(Audio)": {
+                "NISQA": 3.94,
+                "DNMOS": 4.37,
+                "EmoAlign": 39.09,
+                "VES": 2.4
+            }
+        },
+        {
+            "info": {
+                "name": "GLM-4-voice",
+                "size": "-",
+                "type": "open",
+                "link": ""
+            },
+            "Understanding": {
+                "WER": "-",
+                "SemSim": "-",
+                "Acc": 25.54
+            },
+            "Reasoning": {
+                "Acc": 22.28
+            },
+            "Reasoning(Audio)": {
+                "NISQA": 4.82,
+                "DNMOS": 4.23,
+                "EmoAlign": 42.22,
+                "VES": 2.95
+            }
+        },
+        {
+            "info": {
+                "name": "OpenS2S",
+                "size": "-",
+                "type": "open",
+                "link": ""
+            },
+            "Understanding": {
+                "WER": "-",
+                "SemSim": "-",
+                "Acc": 31.18
+            },
+            "Reasoning": {
+                "Acc": 50.37
+            },
+            "Reasoning(Audio)": {
+                "NISQA": 4.68,
+                "DNMOS": 3.93,
+                "EmoAlign": 35.21,
+                "VES": 2.98
+            }
+        },
+        {
+            "info": {
+                "name": "Qwen2.5-Omni-7B",
+                "size": "-",
+                "type": "open",
+                "link": ""
+            },
+            "Understanding": {
+                "WER": 3.97,
+                "SemSim": 99.27,
+                "Acc": 60.87
+            },
+            "Reasoning": {
+                "Acc": 57.7
+            },
+            "Reasoning(Audio)": {
+                "NISQA": 4.49,
+                "DNMOS": 4.12,
+                "EmoAlign": 39.22,
+                "VES": 3.24
+            }
+        },
+        {
+            "info": {
+                "name": "Kimi-Audio",
+                "size": "-",
+                "type": "open",
+                "link": ""
+            },
+            "Understanding": {
+                "WER": 5.54,
+                "SemSim": 99.06,
+                "Acc": 49.27
+            },
+            "Reasoning": {
+                "Acc": 55.93
+            },
+            "Reasoning(Audio)": {
+                "NISQA": 4.17,
+                "DNMOS": 2.88,
+                "EmoAlign": 23.6,
+                "VES": 3.29
+            }
+        },
+        {
+            "info": {
+                "name": "Step-Audio",
+                "size": "-",
+                "type": "open",
+                "link": ""
+            },
+            "Understanding": {
+                "WER": "-",
+                "SemSim": 96.73,
+                "Acc": 40.74
+            },
+            "Reasoning": {
+                "Acc": 45.9
+            },
+            "Reasoning(Audio)": {
+                "NISQA": 4.86,
+                "DNMOS": 4.3,
+                "EmoAlign": 40.58,
+                "VES": 3.2
+            }
+        },
+        {
+            "info": {
+                "name": "EchoX",
+                "size": "-",
+                "type": "open",
+                "link": ""
+            },
+            "Understanding": {
+                "WER": 10.92,
+                "SemSim": 98.03,
+                "Acc": 35.9
+            },
+            "Reasoning": {
+                "Acc": 47.12
+            },
+            "Reasoning(Audio)": {
+                "NISQA": 4.37,
+                "DNMOS": 3.9,
+                "EmoAlign": 39.67,
+                "VES": 1.4
+            }
+        },
+        {
+            "info": {
+                "name": "GPT-4o-Audio",
+                "size": "-",
+                "type": "close",
+                "link": ""
+            },
+            "Understanding": {
+                "WER": 10.74,
+                "SemSim": 98.47,
+                "Acc": 66.25
+            },
+            "Reasoning": {
+                "Acc": 68.04
+            },
+            "Reasoning(Audio)": {
+                "NISQA": 4.91,
+                "DNMOS": 4.23,
+                "EmoAlign": 51.31,
+                "VES": 3.34
+            }
+        },
+        {
+            "info": {
+                "name": "Audio-Flamingo3",
+                "size": "-",
+                "type": "open",
+                "link": ""
+            },
+            "Response(Text)": {
+                "BLEU": 0.6,
+                "ROUGE-L": 8.05,
+                "METEOR": 5.58,
+                "BERTScore": 59.31,
+                "C1": 1.54,
+                "C2": 1.39,
+                "C3": 1.22,
+                "C4": 1.97
+            }
+        },
+        {
+            "info": {
+                "name": "Audio-Flamingo3+Think",
+                "size": "-",
+                "type": "open",
+                "link": ""
+            },
+            "Response(Text)": {
+                "BLEU": 0.84,
+                "ROUGE-L": 10.01,
+                "METEOR": 7.12,
+                "BERTScore": 65.74,
+                "C1": 2.03,
+                "C2": 1.69,
+                "C3": 1.29,
+                "C4": 2.99
+            }
+        },
+        {
+            "info": {
+                "name": "Audio-Flamingo3-chat",
+                "size": "-",
+                "type": "open",
+                "link": ""
+            },
+            "Response(Text)": {
+                "BLEU": 1.53,
+                "ROUGE-L": 16.37,
+                "METEOR": 15.52,
+                "BERTScore": 79.1,
+                "C1": 3.34,
+                "C2": 3.8,
+                "C3": 3.27,
+                "C4": 2.54
+            }
+        },
+        {
+            "info": {
+                "name": "DeSTA2.5-Audio",
+                "size": "-",
+                "type": "open",
+                "link": ""
+            },
+            "Response(Text)": {
+                "BLEU": 2.06,
+                "ROUGE-L": 19.3,
+                "METEOR": 12.69,
+                "BERTScore": 77.6,
+                "C1": 4.13,
+                "C2": 4.43,
+                "C3": 4.06,
+                "C4": 3.36
+            }
+        },
+        {
+            "info": {
+                "name": "VITA-Audio",
+                "size": "-",
+                "type": "open",
+                "link": ""
+            },
+            "Response(Text)": {
+                "BLEU": 1.45,
+                "ROUGE-L": 16.55,
+                "METEOR": 11.76,
+                "BERTScore": 77.49,
+                "C1": 4.0,
+                "C2": 4.44,
+                "C3": 4.34,
+                "C4": 3.03
+            }
+        },
+        {
+            "info": {
+                "name": "LLaMA-Omni2",
+                "size": "-",
+                "type": "open",
+                "link": ""
+            },
+            "Response(Text)": {
+                "BLEU": 1.67,
+                "ROUGE-L": 17.67,
+                "METEOR": 9.94,
+                "BERTScore": 75.89,
+                "C1": 3.99,
+                "C2": 4.29,
+                "C3": 3.92,
+                "C4": 2.92
+            }
+        },
+        {
+            "info": {
+                "name": "Baichuan-Omni-1.5",
+                "size": "-",
+                "type": "open",
+                "link": ""
+            },
+            "Response(Text)": {
+                "BLEU": 1.92,
+                "ROUGE-L": 17.58,
+                "METEOR": 12.99,
+                "BERTScore": 79.17,
+                "C1": 4.05,
+                "C2": 4.47,
+                "C3": 4.02,
+                "C4": 2.81
+            }
+        },
+        {
+            "info": {
+                "name": "GLM-4-voice",
+                "size": "-",
+                "type": "open",
+                "link": ""
+            },
+            "Response(Text)": {
+                "BLEU": 1.7,
+                "ROUGE-L": 15.92,
+                "METEOR": 12.33,
+                "BERTScore": 75.7,
+                "C1": 3.83,
+                "C2": 4.34,
+                "C3": 4.17,
+                "C4": 2.93
+            }
+        },
+        {
+            "info": {
+                "name": "OpenS2S",
+                "size": "-",
+                "type": "open",
+                "link": ""
+            },
+            "Response(Text)": {
+                "BLEU": 1.34,
+                "ROUGE-L": 16.02,
+                "METEOR": 8.78,
+                "BERTScore": 74.44,
+                "C1": 4.02,
+                "C2": 4.31,
+                "C3": 4.15,
+                "C4": 3.31
+            }
+        },
+        {
+            "info": {
+                "name": "Qwen2.5-Omni-7B",
+                "size": "-",
+                "type": "open",
+                "link": ""
+            },
+            "Response(Text)": {
+                "BLEU": 1.41,
+                "ROUGE-L": 15.87,
+                "METEOR": 12.15,
+                "BERTScore": 77.59,
+                "C1": 3.86,
+                "C2": 4.21,
+                "C3": 4.31,
+                "C4": 2.92
+            }
+        },
+        {
+            "info": {
+                "name": "Kimi-Audio",
+                "size": "-",
+                "type": "open",
+                "link": ""
+            },
+            "Response(Text)": {
+                "BLEU": 0.66,
+                "ROUGE-L": 7.82,
+                "METEOR": 4.94,
+                "BERTScore": 54.26,
+                "C1": 3.41,
+                "C2": 3.8,
+                "C3": 3.54,
+                "C4": 2.58
+            }
+        },
+        {
+            "info": {
+                "name": "Step-Audio",
+                "size": "-",
+                "type": "open",
+                "link": ""
+            },
+            "Response(Text)": {
+                "BLEU": 1.92,
+                "ROUGE-L": 17.93,
+                "METEOR": 11.59,
+                "BERTScore": 78.77,
+                "C1": 4.12,
+                "C2": 4.59,
+                "C3": 4.43,
+                "C4": 3.09
+            }
+        },
+        {
+            "info": {
+                "name": "EchoX",
+                "size": "-",
+                "type": "open",
+                "link": ""
+            },
+            "Response(Text)": {
+                "BLEU": 1.07,
+                "ROUGE-L": 14.14,
+                "METEOR": 13.14,
+                "BERTScore": 76.85,
+                "C1": 3.05,
+                "C2": 3.32,
+                "C3": 2.92,
+                "C4": 2.19
+            }
+        },
+        {
+            "info": {
+                "name": "GPT-4o-Audio",
+                "size": "-",
+                "type": "close",
+                "link": ""
+            },
+            "Response(Text)": {
+                "BLEU": 2.54,
+                "ROUGE-L": 19.91,
+                "METEOR": 18.37,
+                "BERTScore": 82.7,
+                "C1": 4.37,
+                "C2": 4.67,
+                "C3": 4.21,
+                "C4": 3.42
+            }
+        }
+    ]
+}
