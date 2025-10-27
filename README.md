@@ -75,3 +75,16 @@ EchoMind/
         ├── eval_response_main.py
         └── utils.py
 ```
+## 📝 SLMs evaluation (Qwen2.5-Omni-7B as a demo)
+1. Environment Setup for Qwen2.5-Omni-7B
+
+```bash
+cd requirements
+conda env create -f qwen25omni_environment.yml
+```
+
+2. Evaluation of Three Tasks
+```bash
+sbatch script/synthesis_scrip/qwen25omni.sh
+```
+
