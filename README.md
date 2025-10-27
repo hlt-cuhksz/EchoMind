@@ -35,3 +35,43 @@ cd EchoMind
 git clone https://huggingface.co/datasets/hlt-cuhksz/EchoMind
 mv EchoMind dataset
 ```
+
+## 📁 Project Structure
+
+```
+EchoMind/
+├── dataset
+│   ├── audio_response
+│   ├── data_human
+│   ├── data_synthesis
+│   └── instruction
+├── figure
+│   ├── EchoMind.png
+│   └── Logo.png
+├── requirements
+│   ├── audio-flamingo-3_setup_environment.sh
+│   ├── baichuan_omni_environment.yml
+│   ├── desta25_audio_setup_environment.sh
+│   ├── glm_environment.yml
+│   ├── gpt4o_environment.yml
+│   ├── kimi_audio_environment.yml
+│   ├── llama-omni2_environment.yml
+│   ├── opens2s_environment.yml
+│   ├── qwen25omni_environment.yml
+│   ├── speechgpt-audio-preview_setup_environment.sh
+│   ├── step-audio-chat_environment.txt
+│   └── vita-audio_setup_environment.sh
+├── script
+│   ├── human_script
+│   └── synthesis_scrip
+└── src
+    ├── analysis-result
+    ├── eval-result
+    │   └── evaluation_metric.py
+    └── eval-slm
+        ├── models
+        ├── eval_asr_main.py
+        ├── eval_mcq_main.py
+        ├── eval_response_main.py
+        └── utils.py
+```
