@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    
+    <link rel="stylesheet" href="Demo/Static/index.css">
+
 </head>
 
 <body data-new-gr-c-s-check-loaded="14.1091.0" data-gr-ext-installed="">
@@ -1288,6 +1289,84 @@ These results underscore the need for SLMs that integrate linguistic content wit
         </table>
     </div>
 </div>
+
+<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+    <div class="leaderboard-header">
+        <h2 class="title is-3" style="color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 15px; margin-bottom: 20px;">
+            📊 Leaderboard 1: Understanding & Reasoning Performance
+        </h2>
+        <p style="color: #7f8c8d; font-size: 14px; font-style: italic; margin-bottom: 20px;">
+            Sorted by average of Understanding ACC and Reasoning ACC
+        </p>
+    </div>
+    
+    <div class="table-responsive">
+        <table id="leaderboard1" class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th rowspan="2" class="rank-header" style="width: 60px;">Rank</th>
+                    <th rowspan="2" class="model-header" style="min-width: 200px;">Model</th>
+                    <th colspan="3" class="section-header">Understanding</th>
+                    <th colspan="1" class="section-header">Reasoning</th>
+                    <th colspan="4" class="section-header">Response (Audio)</th>
+                    <th rowspan="2" class="avg-header" style="min-width: 100px;">Avg Score</th>
+                </tr>
+                <tr>
+                    <th>WER ↓</th>
+                    <th>SemSim ↑</th>
+                    <th>ACC ↑</th>
+                    <th>ACC ↑</th>
+                    <th>NISQA ↑</th>
+                    <th>DNMOS ↑</th>
+                    <th>EmoAlign ↑</th>
+                    <th>VES ↑</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td colspan="11" style="text-align: center; padding: 30px; color: #7f8c8d;">Loading data...</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+    <div class="leaderboard-header">
+        <h2 class="title is-3" style="color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 15px; margin-bottom: 20px;">
+            📝 Leaderboard 2: Response Text Quality
+        </h2>
+        <p style="color: #7f8c8d; font-size: 14px; font-style: italic; margin-bottom: 20px;">
+            Sorted by average of all text metrics
+        </p>
+    </div>
+    
+    <div class="table-responsive">
+        <table id="leaderboard2" class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th rowspan="2" class="rank-header" style="width: 60px;">Rank</th>
+                    <th rowspan="2" class="model-header" style="min-width: 200px;">Model</th>
+                    <th colspan="8" class="section-header">Response (Text)</th>
+                    <th rowspan="2" class="avg-header" style="min-width: 100px;">Avg Score</th>
+                </tr>
+                <tr>
+                    <th>BLEU ↑</th>
+                    <th>ROUGE-L ↑</th>
+                    <th>METEOR ↑</th>
+                    <th>BERTScore ↑</th>
+                    <th>C1 ↑</th>
+                    <th>C2 ↑</th>
+                    <th>C3 ↑</th>
+                    <th>C4 ↑</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td colspan="11" style="text-align: center; padding: 30px; color: #7f8c8d;">Loading data...</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="Demo/Static/index.js"></script>
 
 </body>
 </html>
