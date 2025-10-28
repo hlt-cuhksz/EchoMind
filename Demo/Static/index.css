@@ -211,3 +211,45 @@ body {
         background-color: transparent !important;
     }
 }
+
+/* 平滑滚动 */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 导航栏样式 */
+.fixed-nav {
+    background-color: #2c3e50;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.fixed-nav a {
+    color: white;
+    margin: 5px 15px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.fixed-nav a:hover {
+    color: #3498db;
+}
+
+.fixed-nav a.highlight {
+    color: #ffd700;
+    font-weight: 600;
+}
+
+/* 锚点偏移（避免被导航栏遮挡）*/
+section[id]::before,
+div[id]::before {
+    content: '';
+    display: block;
+    height: 70px;
+    margin-top: -70px;
+    visibility: hidden;
+}

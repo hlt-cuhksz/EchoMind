@@ -20,6 +20,25 @@
 
 <body data-new-gr-c-s-check-loaded="14.1091.0" data-gr-ext-installed="">
 
+<nav style="background-color: #2c3e50; padding: 15px 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+    <div class="container">
+        <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+            <a href="#introduction" style="color: white; margin: 5px 15px; text-decoration: none; font-weight: 500;">
+                <i class="fas fa-info-circle"></i> Introduction
+            </a>
+            <a href="#dataset-demo" style="color: white; margin: 5px 15px; text-decoration: none; font-weight: 500;">
+                <i class="fas fa-database"></i> Dataset Demo
+            </a>
+            <a href="#mcq-examples" style="color: white; margin: 5px 15px; text-decoration: none; font-weight: 500;">
+                <i class="fas fa-question-circle"></i> MCQ Examples
+            </a>
+            <a href="#leaderboard" style="color: #ffd700; margin: 5px 15px; text-decoration: none; font-weight: 600;">
+                <i class="fas fa-trophy"></i> Leaderboard
+            </a>
+        </div>
+    </div>
+</nav>
+
 <style>
         table {
           border-collapse: collapse;
@@ -42,6 +61,25 @@
           background-color: rgb(219, 207, 207);
           transform: translateX(5px); /* 相当于"右边padding" */
         }
+            
+            nav a:hover {
+            color: #3498db !important;
+            transition: color 0.3s ease;
+        }
+
+        /* 平滑滚动 */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* 锚点偏移（避免被导航栏遮挡）*/
+        [id]::before {
+            content: '';
+            display: block;
+            height: 70px;
+            margin-top: -70px;
+            visibility: hidden;
+        }
       </style>
 <div class="container" >
 <header role="banner">
@@ -60,7 +98,7 @@
 </div>
 
 
-<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded" id="introduction">
     <div class="columns is-centered has-text-centered">
         <div class="column is-six-fifths">
           <h2 class="title is-3">Introduction</h2>
@@ -91,7 +129,7 @@ These results underscore the need for SLMs that integrate linguistic content wit
 </div>
 
 
-<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded" id="dataset-demo">
     <h3>EchoMind Audio Dataset demo</h3>
     <h6>Examples of synthesized dialogue data from EchoMind, corresponding to semantically neutral scripts and associated responses, voice-style profiles, and synthesized audio for various target vocal attributes.</h6>
     <div class="table-responsive pt-3">
@@ -852,7 +890,7 @@ These results underscore the need for SLMs that integrate linguistic content wit
     </div>
 </div>
 
-<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded" id="mcq-examples">
     <h3>MCQs Examples in EchoMind</h3>
     <h6>Examples of 8 types of voice understanding questions and 10 types of integrated reasoning questions.</h6>
     
@@ -1290,7 +1328,7 @@ These results underscore the need for SLMs that integrate linguistic content wit
     </div>
 </div>
 
-<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded" id="leaderboard">
     <div class="leaderboard-header">
         <h2 class="title is-3" style="color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 15px; margin-bottom: 20px;">
             📊 Leaderboard 1: Understanding & Reasoning Performance
@@ -1329,7 +1367,7 @@ These results underscore the need for SLMs that integrate linguistic content wit
     </div>
 </div>
 
-<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded" id="leaderboard2">
     <div class="leaderboard-header">
         <h2 class="title is-3" style="color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 15px; margin-bottom: 20px;">
             📝 Leaderboard 2: Response Text Quality
