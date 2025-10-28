@@ -87,4 +87,16 @@ conda env create -f qwen25omni_environment.yml
 ```bash
 sbatch script/synthesis_scrip/qwen25omni.sh
 ```
-
+## Citation
+If you find EchoMind helpful, please consider citing our [paper](https://arxiv.org/abs/2510.22758).
+```bibtex
+@misc{zhou2025echomindinterrelatedmultilevelbenchmark,
+      title={EchoMind: An Interrelated Multi-level Benchmark for Evaluating Empathetic Speech Language Models}, 
+      author={Li Zhou and Lutong Yu and You Lyu and Yihang Lin and Zefeng Zhao and Junyi Ao and Yuhao Zhang and Benyou Wang and Haizhou Li},
+      year={2025},
+      eprint={2510.22758},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2510.22758}, 
+}
+```
