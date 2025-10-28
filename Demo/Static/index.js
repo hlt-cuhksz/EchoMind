@@ -101,18 +101,17 @@ function generateLeaderboardAudio(leaderboardData) {
     });
 }
 
-// Generate Leaderboard 2: Response Text Quality
+// Generate Leaderboard 2: Response Text Quality (Sorted by C1 and C4 average)
 function generateLeaderboard2(leaderboardData) {
     const tbody = document.querySelector('#leaderboard2 tbody');
     tbody.innerHTML = ""; // Clear existing rows
 
-    // Calculate average score for each entry
+    // Calculate average of C1 and C4 for each entry
     const processedData = leaderboardData.leaderboardData.map(entry => {
         const textMetrics = entry["Response(Text)"];
-        const values = Object.values(textMetrics).filter(v => typeof v === 'number');
-        const avgScore = values.length > 0 
-            ? values.reduce((sum, val) => sum + val, 0) / values.length 
-            : 0;
+        const c1 = parseFloat(textMetrics.C1) || 0;
+        const c4 = parseFloat(textMetrics.C4) || 0;
+        const avgScore = (c1 + c4) / 2;
         return { ...entry, avgScore };
     });
 
@@ -146,7 +145,7 @@ function generateLeaderboard2(leaderboardData) {
             <td>${formatValue(textMetrics.C4)}</td>
         `;
         
-        // Average score
+        // Average score (C1 + C4) / 2
         const avgCell = `<td class="avg-score">${formatValue(entry.avgScore)}</td>`;
         
         row.innerHTML = rankCell + nameCell + textCells + avgCell;
