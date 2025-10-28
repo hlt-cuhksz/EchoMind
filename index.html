@@ -26,14 +26,14 @@
             <a href="#introduction" style="color: white; margin: 5px 15px; text-decoration: none; font-weight: 500;">
                 <i class="fas fa-info-circle"></i> Introduction
             </a>
+            <a href="#leaderboard" style="color: #ffd700; margin: 5px 15px; text-decoration: none; font-weight: 600;">
+                <i class="fas fa-trophy"></i> Leaderboard
+            </a>
             <a href="#dataset-demo" style="color: white; margin: 5px 15px; text-decoration: none; font-weight: 500;">
                 <i class="fas fa-database"></i> Dataset Demo
             </a>
             <a href="#mcq-examples" style="color: white; margin: 5px 15px; text-decoration: none; font-weight: 500;">
                 <i class="fas fa-question-circle"></i> MCQ Examples
-            </a>
-            <a href="#leaderboard" style="color: #ffd700; margin: 5px 15px; text-decoration: none; font-weight: 600;">
-                <i class="fas fa-trophy"></i> Leaderboard
             </a>
         </div>
     </div>
@@ -128,6 +128,7 @@ These results underscore the need for SLMs that integrate linguistic content wit
     
 </div>
 
+<!-- Leaderboard 1: Understanding & Reasoning -->
 <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded" id="leaderboard">
     <div class="leaderboard-header">
         <h2 class="title is-3" style="color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 15px; margin-bottom: 20px;">
@@ -146,7 +147,6 @@ These results underscore the need for SLMs that integrate linguistic content wit
                     <th rowspan="2" class="model-header" style="min-width: 200px;">Model</th>
                     <th colspan="3" class="section-header">Understanding</th>
                     <th colspan="1" class="section-header">Reasoning</th>
-                    <th colspan="4" class="section-header">Response (Audio)</th>
                     <th rowspan="2" class="avg-header" style="min-width: 100px;">Avg Score</th>
                 </tr>
                 <tr>
@@ -154,6 +154,35 @@ These results underscore the need for SLMs that integrate linguistic content wit
                     <th>SemSim ↑</th>
                     <th>ACC ↑</th>
                     <th>ACC ↑</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td colspan="7" style="text-align: center; padding: 30px; color: #7f8c8d;">Loading data...</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Leaderboard 2: Response Audio -->
+<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded" id="leaderboard-audio">
+    <div class="leaderboard-header">
+        <h2 class="title is-3" style="color: #2c3e50; border-bottom: 3px solid #e74c3c; padding-bottom: 15px; margin-bottom: 20px;">
+            🎵 Leaderboard 2: Response Audio Quality
+        </h2>
+        <p style="color: #7f8c8d; font-size: 14px; font-style: italic; margin-bottom: 20px;">
+            Sorted by VES score
+        </p>
+    </div>
+    
+    <div class="table-responsive">
+        <table id="leaderboard-audio" class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th rowspan="2" class="rank-header" style="width: 60px;">Rank</th>
+                    <th rowspan="2" class="model-header" style="min-width: 200px;">Model</th>
+                    <th colspan="4" class="section-header">Response (Audio)</th>
+                </tr>
+                <tr>
                     <th>NISQA ↑</th>
                     <th>DNMOS ↑</th>
                     <th>EmoAlign ↑</th>
@@ -161,16 +190,17 @@ These results underscore the need for SLMs that integrate linguistic content wit
                 </tr>
             </thead>
             <tbody>
-                <tr><td colspan="11" style="text-align: center; padding: 30px; color: #7f8c8d;">Loading data...</td></tr>
+                <tr><td colspan="6" style="text-align: center; padding: 30px; color: #7f8c8d;">Loading data...</td></tr>
             </tbody>
         </table>
     </div>
 </div>
 
+<!-- Leaderboard 3: Response Text Quality -->
 <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded" id="leaderboard2">
     <div class="leaderboard-header">
-        <h2 class="title is-3" style="color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 15px; margin-bottom: 20px;">
-            📝 Leaderboard 2: Response Text Quality
+        <h2 class="title is-3" style="color: #2c3e50; border-bottom: 3px solid #27ae60; padding-bottom: 15px; margin-bottom: 20px;">
+            📝 Leaderboard 3: Response Text Quality
         </h2>
         <p style="color: #7f8c8d; font-size: 14px; font-style: italic; margin-bottom: 20px;">
             Sorted by average of all text metrics

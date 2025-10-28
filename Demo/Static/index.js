@@ -49,18 +49,54 @@ function generateLeaderboard1(leaderboardData) {
         // Reasoning metrics
         const reasoningCell = `<td>${formatValue(entry.Reasoning.Acc)}</td>`;
         
+        // Average score
+        const avgCell = `<td class="avg-score">${formatValue(entry.avgScore)}</td>`;
+        
+        row.innerHTML = rankCell + nameCell + understandingCells + reasoningCell + avgCell;
+        tbody.appendChild(row);
+    });
+}
+
+// Generate Leaderboard Audio: Response Audio Quality (Sorted by VES)
+function generateLeaderboardAudio(leaderboardData) {
+    const tbody = document.querySelector('#leaderboard-audio tbody');
+    tbody.innerHTML = ""; // Clear existing rows
+
+    // Filter out entries with no VES score and sort by VES (descending)
+    const processedData = leaderboardData.leaderboardData
+        .filter(entry => {
+            const ves = entry["Reasoning(Audio)"].VES;
+            return ves !== "-" && ves !== null && ves !== undefined;
+        })
+        .map(entry => ({
+            ...entry,
+            vesScore: parseFloat(entry["Reasoning(Audio)"].VES) || 0
+        }))
+        .sort((a, b) => b.vesScore - a.vesScore);
+
+    // Generate table rows
+    processedData.forEach((entry, index) => {
+        const row = document.createElement('tr');
+        
+        // Determine rank class for top 3
+        let rankClass = '';
+        if (index === 0) rankClass = 'rank-1';
+        else if (index === 1) rankClass = 'rank-2';
+        else if (index === 2) rankClass = 'rank-3';
+
+        // Create row HTML
+        const rankCell = `<td class="rank-col ${rankClass}">${index + 1}</td>`;
+        const nameCell = `<td class="model-name">${entry.info.name}</td>`;
+        
         // Response Audio metrics
         const audioCells = `
             <td>${formatValue(entry["Reasoning(Audio)"].NISQA)}</td>
             <td>${formatValue(entry["Reasoning(Audio)"].DNMOS)}</td>
             <td>${formatValue(entry["Reasoning(Audio)"].EmoAlign)}</td>
-            <td>${formatValue(entry["Reasoning(Audio)"].VES)}</td>
+            <td class="avg-score">${formatValue(entry["Reasoning(Audio)"].VES)}</td>
         `;
         
-        // Average score
-        const avgCell = `<td class="avg-score">${formatValue(entry.avgScore)}</td>`;
-        
-        row.innerHTML = rankCell + nameCell + understandingCells + reasoningCell + audioCells + avgCell;
+        row.innerHTML = rankCell + nameCell + audioCells;
         tbody.appendChild(row);
     });
 }
@@ -122,11 +158,16 @@ function generateLeaderboard2(leaderboardData) {
 function loadLeaderboard1() {
     fetch('./Demo/Data/leaderboard_data_1.json')
         .then(response => response.json())
-        .then(data => generateLeaderboard1(data))
+        .then(data => {
+            generateLeaderboard1(data);
+            generateLeaderboardAudio(data);  // 使用相同数据生成 Audio 排行榜
+        })
         .catch(error => {
             console.error('Error loading leaderboard 1 data:', error);
             document.querySelector('#leaderboard1 tbody').innerHTML = 
-                '<tr><td colspan="11" class="error-message">Error loading data. Please check the console.</td></tr>';
+                '<tr><td colspan="7" class="error-message">Error loading data. Please check the console.</td></tr>';
+            document.querySelector('#leaderboard-audio tbody').innerHTML = 
+                '<tr><td colspan="6" class="error-message">Error loading data. Please check the console.</td></tr>';
         });
 }
 
@@ -143,6 +184,6 @@ function loadLeaderboard2() {
 
 // Initialize leaderboards when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
-    loadLeaderboard1();
+    loadLeaderboard1();  // 这会同时生成 leaderboard1 和 leaderboard-audio
     loadLeaderboard2();
 });
