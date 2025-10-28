@@ -120,7 +120,7 @@ function generateLeaderboard2(leaderboardData) {
 
 // Load JSON data and generate leaderboards
 function loadLeaderboard1() {
-    fetch('Demo/Data/leaderboard_data_1.json')
+    fetch('./Demo/Data/leaderboard_data_1.json')
         .then(response => response.json())
         .then(data => generateLeaderboard1(data))
         .catch(error => {
@@ -131,7 +131,7 @@ function loadLeaderboard1() {
 }
 
 function loadLeaderboard2() {
-    fetch('Demo/Data/leaderboard_data_2.json')
+    fetch('./Demo/Data/leaderboard_data_2.json')
         .then(response => response.json())
         .then(data => generateLeaderboard2(data))
         .catch(error => {
