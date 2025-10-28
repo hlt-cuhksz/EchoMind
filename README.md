@@ -22,6 +22,11 @@ Speech Language Models (SLMs) have advanced spoken language understanding. Howev
 </p>
  <figcaption>The EchoMind framework & examples. (a) Multi‑level cognitive process simulation for empathetic dialogue: Level 1—Understanding through content (ASR) and voice (MCQs); Level 2—Reasoning by integrating content and voice (MCQs); Level 3—Conversation with contextually and emotionally aligned responses (Open-domain Response). (b) Responses under controlled vocal-style variations of the same script—target, neutral, and alternative expressions—illustrating differences in response focus.</figcaption>
 
+## 🔥 Overall Performance Results on 12 SLMs
+
+<p align="center">
+  <img src="figure/main_result.png"/>
+</p>
 
 ## 🚀 Getting Started
 ###  Setup
