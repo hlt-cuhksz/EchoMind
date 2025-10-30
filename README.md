@@ -24,7 +24,7 @@ Speech Language Models (SLMs) have advanced spoken language understanding. Howev
 
 ## 🔥 Comparison of Audio-based Benchmarks
 <p align="center">
-  <img src="figure/benchmark_comparison.png"/>
+  <img src="figure/benchmark_comparison.PNG"/>
 </p>
 
 ## 🔥 Overall Performance Results on 12 SLMs
