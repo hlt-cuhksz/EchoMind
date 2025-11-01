@@ -7,6 +7,7 @@
 <div align="center">
 <a href="https://hlt-cuhksz.github.io/EchoMind/" target="_blank"><img src=https://img.shields.io/badge/Website-online-green.svg></a>
 <a href="https://arxiv.org/abs/2510.22758" target="_blank"><img src=https://img.shields.io/badge/arXiv-b5212f.svg?logo=arxiv></a>
+<a href="https://github.com/hlt-cuhksz/echomind" target="_blank"><img src=https://img.shields.io/badge/Code-ff2500.svg?logo=github></a>
 <a href="https://huggingface.co/datasets/hlt-cuhksz/EchoMind" target="_blank"><img src=https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace%20Datasets-27b3b4.svg></a>
 <a href="https://hlt-cuhksz.github.io/EchoMind/#leaderboard" target="_blank"><img src=https://img.shields.io/badge/%F0%9F%8F%86%20Leaderboard%20-27b333.svg></a>
 </div>
